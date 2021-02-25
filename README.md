@@ -1,4 +1,4 @@
-# vuepleez
+# vuejs_template
 
 ## Project setup
 ```
