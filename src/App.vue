@@ -1,6 +1,9 @@
 <template>
     <div>
         <router-view></router-view>
+        <div>
+        oláaa
+        </div>
     </div>
 </template>
 
