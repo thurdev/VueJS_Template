@@ -3,6 +3,7 @@
         <router-view></router-view>
         <div>
         oláaa
+        adeus2
         </div>
     </div>
 </template>
