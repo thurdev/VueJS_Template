@@ -1,0 +1,554 @@
+/* Brand Colors */
+$brand-primary: #232859;
+.text-primary{
+    color: $brand-primary;
+}
+.text-white{
+    color: white !important;
+}
+.bg-primary{
+    background-color: $brand-primary;
+}
+.boxshadow-secondary{
+    box-shadow: 0px 8px 20px rgba(122, 137, 254, 0.25);
+}
+$brand-secondary: #5F25E0;
+.bg-secondary{
+    background-color: $brand-secondary !important;
+}
+$brand-pleez: #FF5E00;
+.bg-pleez{
+    background-color: $brand-pleez;
+}
+.text-pleez{
+    color: $brand-pleez;
+}
+/* Secondary Colors */
+$secondary-peach: #EB995D;
+$secondary-grey-stroke: #D6DFE8;
+$secondary-text: #474E68;
+$secondary-text-2: #969DBB;
+.bg-secondary-text-2{
+    background-color: $secondary-text-2;
+}
+
+/* Grey Colors */
+$grey-background: #FBFBFE;
+$grey-lines: #E6E6E6;
+$grey-black: #000000;
+$grey-white: #FFFFFF;
+
+/* Sizes */
+$breakpoint-width-laptop: 1024px;
+$breakpoint-height-laptop: 768px;
+
+$breakpoint-width-desktop: 1280px;
+$breakpoint-height-desktop: 1024px;
+
+$breakpoint-width-mobile: 620px;
+$breakpoint-height-mobile: 480px;
+
+
+.text-disabled{
+    color: #D8D9E2 !important;
+    cursor: not-allowed;
+}
+
+/* Shadows */
+@mixin shadow-card {
+    box-shadow: 0px 10px 30px rgba(122, 137, 254, .1);
+}
+
+@mixin shadow-buttons {
+    box-shadow: 0px 8px 20px rgba(122, 137, 254, .25);
+}
+
+@mixin shadow-small-elements {
+    box-shadow: 0px 15px 35px rgba(122, 137, 254, .05);
+}
+
+/* Cards */
+.card {
+    filter: drop-shadow(0px 10px 30px rgba(122, 137, 254, 0.1));
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(122, 137, 254, 0.04);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
+
+.card-header{
+    color: #232859;
+    padding: 1em;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.card-content{
+    text-align: unset;
+    padding: 1em;
+}
+
+/* Typography */
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0;
+}
+
+.text-600-16{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+
+/* Table */
+table:not(.table-horizontal) {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table:not(.table-horizontal) tr {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+table:not(.table-horizontal) th,
+table:not(.table-horizontal) td {
+  text-align: left;
+  border-spacing: 0px;
+}
+
+table:not(.table-horizontal) th {
+    // Heading 6
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    padding-bottom: 12px;
+}
+
+
+table:not(.table-horizontal) thead, table:not(.table-horizontal) tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table:not(.table-horizontal) tbody{
+    display: inline-block;
+    width: 100%;
+    overflow-y: auto;
+}
+
+table:not(.table-horizontal) tbody::-webkit-scrollbar {
+  width: 2px;               /* width of the entire scrollbar */
+}
+table:not(.table-horizontal)tbody::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+table:not(.table-horizontal) tbody::-webkit-scrollbar-thumb {
+  background-color: $brand-primary;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+table:not(.table-horizontal) td{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px;
+}
+
+table:not(.table-horizontal) thead{
+    color: #232859;
+}
+
+@media screen and (max-width: 1400px) {
+  table:not(.table-horizontal) {
+    border: 0;
+  }
+
+  table:not(.table-horizontal) caption {
+    font-size: 1.3em;
+  }
+  
+  table:not(.table-horizontal) thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table:not(.table-horizontal) tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table:not(.table-horizontal) td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  
+  table:not(.table-horizontal) td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    color: $brand-primary;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+  }
+  
+  table:not(.table-horizontal) td:last-child {
+    border-bottom: 0;
+  }
+}
+
+table.table-horizontal{
+
+    td{
+        font-weight: 600;
+    }
+
+    & > tr:nth-child(n+2) > *{
+        padding-top: 22px;
+    }
+
+    & > tr > th{
+        text-align: left;
+        color: #232859;
+        font-weight: 400;
+    }
+    & > tr > td{
+        text-align: right;
+        color: #232859;
+        font-weight: 600;
+    }
+}
+
+
+/* Fonts */
+@mixin font-size($size) {
+    font-size: $size * 1px;
+}
+
+/* Margins */
+.mt-1 {
+    margin-top: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mt-4 {
+    margin-top: 4rem !important;
+}
+
+.mt-5 {
+    margin-top: 5rem !important;
+}
+
+.mt-6 {
+    margin-top: 6rem !important;
+}
+
+.mt-7 {
+    margin-top: 7rem !important;
+}
+
+.mt-8 {
+    margin-top: 8rem !important;
+}
+
+.mt-9 {
+    margin-top: 9rem !important;
+}
+
+.mt-10 {
+    margin-top: 10rem !important;
+}
+
+.mr-1 {
+    margin-right: 1rem !important;
+}
+
+@mixin mt($size: 1) {
+    margin-top: $size * 1rem !important;
+}
+
+@mixin mr($size: 1) {
+    margin-right: $size * 1rem !important;
+}
+
+@mixin ml($size: 1) {
+    margin-left: $size * 1rem !important;
+}
+
+@mixin mb($size: 1) {
+    margin-bottom: $size * 1rem !important;
+}
+
+
+/* Paddings */
+.p-1{
+    padding: 1rem;
+}
+
+.pt-1 {
+    padding-top: 0.50rem !important;
+}
+
+.pt-2 {
+    padding-top: 0.75rem !important;
+}
+
+.pt-3 {
+    padding-top: 1rem !important;
+}
+
+.pt-4 {
+    padding-top: 1.25rem !important;
+}
+
+.pt-5 {
+    padding-top: 1.5rem !important;
+}
+
+.pt-6 {
+    padding-top: 1.75rem !important;
+}
+
+.pt-7 {
+    padding-top: 2rem !important;
+}
+
+.pt-8 {
+    padding-top: 2.25rem !important;
+}
+
+.pt-9 {
+    padding-top: 2.5rem !important;
+}
+
+.pt-10 {
+    padding-top: 2.75rem !important;
+}
+
+@mixin pt($size: 1) {
+    padding-top: $size * 1rem !important;
+}
+
+@mixin pr($size: 1) {
+    padding-right: $size * 1rem !important;
+}
+
+@mixin pl($size: 1) {
+    padding-left: $size * 1rem !important;
+}
+
+@mixin pb($size: 1) {
+    padding-bottom: $size * 1rem !important;
+}
+
+
+
+/* GRID Columns */
+.col-1 {
+    grid-column: 1;
+}
+
+.col-2 {
+    grid-column: 2;
+}
+
+.col-3 {
+    grid-column: 3;
+}
+
+.col-4 {
+    grid-column: 4;
+}
+
+.col-5 {
+    grid-column: 5;
+}
+
+.col-6 {
+    grid-column: 6;
+}
+
+.col-1-3 {
+    grid-column: 1 / 3;
+}
+
+.col-1-4 {
+    grid-column: 1 / 4;
+}
+
+.col-1-5 {
+    grid-column: 1 / 5;
+}
+
+.col-1-6{
+    grid-column: 1 / 6;
+}
+
+.col-1-7{
+    grid-column: 1 / 7;
+}
+
+.col-2-3 {
+    grid-column: 2 / 23;
+}
+
+.col-2-4 {
+    grid-column: 2 / 4;
+}
+
+.col-2-5 {
+    grid-column: 2 / 5;
+}
+
+.col-2-6{
+    grid-column: 2 / 6;
+}
+
+.col-2-7{
+    grid-column: 2 / 7;
+}
+
+.col-3-3 {
+    grid-column: 3 / 3;
+}
+
+.col-3-4 {
+    grid-column: 3 / 4;
+}
+
+.col-3-5 {
+    grid-column: 3 / 5;
+}
+
+.col-3-6{
+    grid-column: 3 / 6;
+}
+
+.col-3-7{
+    grid-column: 3 / 7;
+}
+
+.col-4-5 {
+    grid-column: 4 / 5;
+}
+
+.col-4-6{
+    grid-column: 4 / 6;
+}
+
+.col-4-7{
+    grid-column: 4 / 7;
+}
+
+.col-5-6{
+    grid-column: 5 / 6;
+}
+
+.col-5-7{
+    grid-column: 5 / 7;
+}
+
+.col-6-7{
+    grid-column: 6 / 7;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.parent-vertical-text-align {
+    display: table;
+}
+
+.child-vertical-text-align {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.grid{
+    display: grid;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Chart */
+.apexcharts-title-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #474E68;
+}
+
+.apexcharts-legend-series{
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 6px;
+    padding-left: .8em;
+    padding-right: .8em;
+    padding-bottom: .2em;
+}
+
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left{
+    padding-right: 0px;
+}

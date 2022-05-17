@@ -1,6 +1,6 @@
 {
-  "name": "vuejs_template",
-  "version": "0.1.0",
+  "name": "optimizations-dashboard",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,10 +8,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "apexcharts": "^3.35.0",
+    "chart.js": "^3.7.1",
     "core-js": "^3.6.5",
+    "sass-loader": "10.1.1",
     "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.2",
+    "vue-chartjs": "^4.0.6",
     "vue-router": "^3.4.3",
-    "vuetify": "^2.4.5",
+    "vue-toast-notification": "0.6",
+    "vuejs-datatable": "^2.0.0-alpha.7",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -21,6 +27,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.50.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

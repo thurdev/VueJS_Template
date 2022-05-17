@@ -1,4 +1,4 @@
-# vuejs_template
+# optimizations-dashboard
 
 ## Project setup
 ```
