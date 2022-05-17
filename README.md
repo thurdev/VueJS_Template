@@ -1,4 +1,4 @@
-# optimizations-dashboard
+# Vue.JS (2) Template v2.0
 
 ## Project setup
 ```
