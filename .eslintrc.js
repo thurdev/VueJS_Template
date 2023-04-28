@@ -9,7 +9,7 @@ module.exports = {
   ],
 
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    // parser: '@typescript-eslint/parser',
     ecmaVersion: 2020,
   },
 
@@ -103,5 +103,6 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    es2022: true,
   },
 };

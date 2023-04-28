@@ -20,9 +20,9 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 
 Vue.use(VueSweetalert2);
 
-Vue.prototype.$http = axios.create({
-  baseURL: process.env.VUE_APP_API_BASE_URL + '/api/',
-});
+// Vue.prototype.$http = axios.create({
+//   baseURL: process.env.VUE_APP_API_BASE_URL + '/api/',
+// });
 
 import registerComponents from '@/components/';
 
@@ -34,11 +34,6 @@ import 'vue-toast-notification/dist/theme-sugar.css';
 Vue.use(VueToast);
 
 Vue.prototype.$version = '1.0.0';
-
-Vue.prototype.$default = {
-  avatar: process.env.VUE_APP_DEFAULT_USER_AVATAR,
-  banner: process.env.VUE_APP_DEFAULT_USER_BANNER,
-};
 
 export default new Vue({
   router,
