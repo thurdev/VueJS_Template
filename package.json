@@ -4,30 +4,49 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve-fix": "set NODE_OPTIONS=--openssl-legacy-provider & vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "apexcharts": "^3.35.0",
-    "chart.js": "^3.7.1",
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "eslint-plugin": "^1.0.1",
+    "eslint-plugin-cypress": "^2.12.1",
+    "moment": "^2.29.4",
     "sass-loader": "10.1.1",
     "vue": "^2.6.11",
     "vue-apexcharts": "^1.6.2",
-    "vue-chartjs": "^4.0.6",
+    "vue-loading-overlay": "^3.0",
     "vue-router": "^3.4.3",
+    "vue-sweetalert2": "^5.0.5",
     "vue-toast-notification": "0.6",
-    "vuejs-datatable": "^2.0.0-alpha.7",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "babel-loader": "^8.2.5",
+    "cypress": "^10.10.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier-vue": "^4.2.0",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
     "sass": "^1.50.0",
+    "ts-loader": "~8.2.0",
+    "typescript": "~4.6.0",
+    "vue-loader": "16.8.2",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -48,5 +67,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }
