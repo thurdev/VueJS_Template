@@ -8,7 +8,3 @@ Vue.component(
   'blank-layout',
   () => import(/* webpackChunkName: "BlankLayout" */ './BlankLayout.vue')
 );
-Vue.component(
-  'authenticated-layout',
-  () => import(/* webpackChunkName: "AuthenticatedLayout" */ './AuthenticatedLayout.vue')
-);

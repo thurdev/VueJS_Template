@@ -1,7 +1,11 @@
 <template>
-  <div>alo</div>
+  <div></div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+};
 </script>

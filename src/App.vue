@@ -17,3 +17,7 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style>
+@import './index.css';
+</style>
