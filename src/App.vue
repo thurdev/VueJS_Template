@@ -1,21 +1,18 @@
 <template>
-  <div style="height: inherit">
-    <transition name="fade" mode="out-in">
-      <component :is="layout" class="view-container"> </component>
-    </transition>
+  <div>
+    <component :is="layout" class="view-container"> </component>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
+<script lang="ts" setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 
-export default Vue.extend({
-  computed: {
-    layout() {
-      return this.$route.meta?.layout || 'blank-layout';
-    },
-  },
-});
+const route = useRoute();
+
+const layout = computed(function() {
+  return route.meta?.layout || 'blank-layout';
+})
 </script>
 
 <style>

@@ -34,9 +34,13 @@ module.exports = {
       app: "./src/main.ts",
     },
     resolve: {
+      symlinks: false,
       extensions: [".ts", ".js", ".vue", ".json"],
       alias: {
         "@": path.resolve(__dirname, "src"),
+        'vue$': 'vue/dist/vue.esm-bundler.js',
+        vue: path.resolve(__dirname, `../node_modules/vue`)
+
       },
     },
     devtool: "source-map",

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-view/>
-  </div>
+  <div>oi</div>
 </template>
 
 <script setup>

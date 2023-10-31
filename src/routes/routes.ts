@@ -12,12 +12,11 @@
  *  }
  */
 
-import Views from '@/views/';
-
 export default [
   {
     path: '/',
-    component: Views.ExampleView,
+    name: 'Home',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Home/HomeView.vue'),
     meta: {
       layout: 'blank-layout',
     },

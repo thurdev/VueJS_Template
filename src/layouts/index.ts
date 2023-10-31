@@ -2,9 +2,10 @@
  * Here is defined all layouts of the application.
  */
 
-import Vue from 'vue';
+import BlankLayout from './BlankLayout.vue';
 
-Vue.component(
-  'blank-layout',
-  () => import(/* webpackChunkName: "BlankLayout" */ './BlankLayout.vue')
-);
+const registerLayouts = (app) => {
+  app.component('BlankLayout', BlankLayout);
+};
+
+export { registerLayouts };
