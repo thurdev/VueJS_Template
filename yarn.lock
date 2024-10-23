@@ -7,15 +7,6 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@achrinza/node-ipc@^9.2.5":
-  version "9.2.6"
-  resolved "https://registry.yarnpkg.com/@achrinza/node-ipc/-/node-ipc-9.2.6.tgz#75c89e95fe38ff9e3dd33a0d2681dc28f1c31f33"
-  integrity sha512-ULSIYPy4ZPM301dfCxRz0l2GJjOwIo/PqmWonIu1bLml7UmnVQmH+juJcoyXp6E8gIRRNAjGYftJnNQlfy4vPg==
-  dependencies:
-    "@node-ipc/js-queue" "2.0.3"
-    event-pubsub "4.3.0"
-    js-message "1.0.7"
-
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
